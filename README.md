@@ -21,13 +21,13 @@ Perusahaan belum memiliki segmentasi pelanggan yang jelas sehingga promosi masih
 
 ## Project Results
 
-| Metric | Result |
+| Metrik | Hasil |
 |--------|--------|
-| Number of Customer Segments | 5 |
-| Optimal Number of Clusters | K = 5 |
+| Jumlah Segmentasi Pelanggan | 5 |
+| Jumlah Klaster Optimal | K = 5 |
 | Silhouette Score | 0.555 |
 | Davies-Bouldin Index | 0.572 |
-| Business Output | Marketing recommendations for five customer segments |
+| Business Output | MRekomendasi pemasaran untuk lima segmen pelanggan |
 
 
 ## Visual Summary
@@ -52,7 +52,7 @@ Lima cluster terbentuk dengan pemisahan yang cukup jelas berdasarkan Annual Inco
 
 ![Cluster Distribution](images/cluster_distribution.png)
 
-Distribusi pelanggan menunjukkan bahwa **Regular Customers** merupakan segmen terbesar (40.5%), sedangkan **Premium Customers** hanya mencakup 19.5% dari total pelanggan. Hal ini menunjukkan bahwa ukuran segmen tidak selalu sebanding dengan kontribusi nilai bisnis.
+Distribusi pelanggan menunjukkan bahwa **Pelanggan Reguler** merupakan segmen terbesar (40.5%), sedangkan **Pelanggan Premium** hanya mencakup 19.5% dari total pelanggan. Hal ini menunjukkan bahwa ukuran segmen tidak selalu sebanding dengan kontribusi nilai bisnis.
 
 ---
 
@@ -62,11 +62,11 @@ Distribusi pelanggan menunjukkan bahwa **Regular Customers** merupakan segmen te
 
 | Segmen | Karakteristik | Jumlah Pelanggan | Kontribusi Nilai |
 |---|---|---|---|
-| Premium Customers | Income tinggi, Spending Score tinggi | 39 (19.5%) | 45.5% |
-| Regular Customers | Income & Spending Score menengah | 81 (40.5%) | 36.4% |
-| Conservative Customers | Income tinggi, Spending Score rendah | 35 (17.5%) | 8.7% |
-| Aspirational Customers | Income rendah, Spending Score tinggi, usia relatif muda | 22 (11%) | 7.4% |
-| Budget-Conscious Customers | Income rendah, Spending Score rendah | 23 (11.5%) | 2.1% |
+| Pelanggan Premium | Income tinggi, Spending Score tinggi | 39 (19.5%) | 45.5% |
+| Pelanggan Reguler | Income & Spending Score menengah | 81 (40.5%) | 36.4% |
+| Pelanggan Konservatif | Income tinggi, Spending Score rendah | 35 (17.5%) | 8.7% |
+| Pelanggan Aspirasional | Income rendah, Spending Score tinggi, usia relatif muda | 22 (11%) | 7.4% |
+| Pelanggan Hemat | Income rendah, Spending Score rendah | 23 (11.5%) | 2.1% |
 
 ---
 
@@ -74,30 +74,30 @@ Distribusi pelanggan menunjukkan bahwa **Regular Customers** merupakan segmen te
 
 ![Value Contribution](images/value_contribution.png)
 
-Meski hanya 19.5% dari total pelanggan, **Premium Customers menyumbang 45.5% estimasi kontribusi nilai belanja** — melebihi Regular Customers yang jumlahnya lebih dari dua kali lipat. Bersama-sama, kedua segmen ini merepresentasikan 60% pelanggan namun menyumbang lebih dari 80% kontribusi nilai, menjadikannya prioritas utama alokasi sumber daya pemasaran.
+Meski hanya 19.5% dari total pelanggan, **Pelanggan Premium menyumbang 45.5% estimasi kontribusi nilai belanja** yang artinya melebihi Pelanggan Reguler yang jumlahnya lebih dari dua kali lipat. Bersama-sama, kedua segmen ini merepresentasikan 60% pelanggan namun menyumbang lebih dari 80% kontribusi nilai, menjadikannya prioritas utama alokasi sumber daya pemasaran.
 
 ## Key Insights
 
 - Elbow Method menunjukkan jumlah cluster optimal sebanyak lima, didukung oleh Silhouette Score (0.555) dan Davies–Bouldin Index (0.572) yang menunjukkan kualitas clustering yang cukup baik.
 - Kelompok pelanggan dengan pendapatan tinggi belum tentu memiliki tingkat pengeluaran tinggi, sehingga strategi pemasaran tidak dapat hanya didasarkan pada tingkat pendapatan.
-- Conservative Customers memiliki pendapatan tinggi kedua di antara seluruh segmen, namun kontribusi nilainya hanya 8.7% — menjadikan segmen ini *untapped potential* terbesar untuk pertumbuhan nilai pelanggan.
+- Pelanggan Konsevatif memiliki pendapatan tinggi kedua di antara seluruh segmen, namun kontribusi nilainya hanya 8.7% — menjadikan segmen ini *untapped potential* terbesar untuk pertumbuhan nilai pelanggan.
 
 ## Business Impact
 
 - Mengidentifikasi lima segmen pelanggan dengan karakteristik dan potensi bisnis yang berbeda.
 - Membantu perusahaan memfokuskan strategi pemasaran pada Premium dan Regular Customers yang memberikan kontribusi nilai terbesar.
-- Mengungkap Conservative Customers sebagai segmen dengan potensi pertumbuhan tinggi meskipun aktivitas belanjanya masih rendah.
+- Mengungkap Pelanggan Konservatif sebagai segmen dengan potensi pertumbuhan tinggi meskipun aktivitas belanjanya masih rendah.
 - Menyediakan dasar pengambilan keputusan berbasis data untuk strategi akuisisi, retensi, dan pengembangan pelanggan.
 
 ## Business Recommendations
 
 | Prioritas | Segmen | Tujuan Bisnis | Rekomendasi Utama |
 |---|---|---|---|
-| Tinggi | Premium Customers | Mempertahankan loyalitas pelanggan bernilai tertinggi | Program membership eksklusif, layanan personal, early access produk baru |
-| Tinggi | Regular Customers | Meningkatkan frekuensi & nilai transaksi | Program loyalitas berjenjang, bundling produk, promosi personal |
-| Sedang | Conservative Customers | Mengonversi daya beli tinggi menjadi aktivitas belanja | *Personalized offer*, komunikasi 1-on-1 (*relationship marketing*) |
-| Sedang | Aspirational Customers | Mempertahankan keterlibatan & mendorong pertumbuhan daya beli | Promo berkala, skema cicilan/produk terjangkau, program poin |
-| Rendah | Budget-Conscious Customers | Mempertahankan pelanggan dengan efisiensi biaya pemasaran | Produk ekonomis, promosi massal (bukan personal) |
+| Tinggi | Pelanggan Premium | Mempertahankan loyalitas pelanggan bernilai tertinggi | Program membership eksklusif, layanan personal, early access produk baru |
+| Tinggi | Pelanggan Reguler | Meningkatkan frekuensi & nilai transaksi | Program loyalitas berjenjang, bundling produk, promosi personal |
+| Sedang | Pelanggan Konservatif | Mengonversi daya beli tinggi menjadi aktivitas belanja | *Personalized offer*, komunikasi 1-on-1 (*relationship marketing*) |
+| Sedang | Pelanggan Aspirasional | Mempertahankan keterlibatan & mendorong pertumbuhan daya beli | Promo berkala, skema cicilan/produk terjangkau, program poin |
+| Rendah | Pelanggan Hemat | Mempertahankan pelanggan dengan efisiensi biaya pemasaran | Produk ekonomis, promosi massal (bukan personal) |
 
 ## Project Workflow
 
